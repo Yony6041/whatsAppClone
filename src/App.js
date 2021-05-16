@@ -12,7 +12,6 @@ function App() {
         <Chat />
       </div>
     </div>
-    
   );
 }
 
