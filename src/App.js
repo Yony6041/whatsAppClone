@@ -6,11 +6,12 @@ import {
   Switch, Route, BrowserRouter as Router
 } from "react-router-dom";
 import Login from "./Login";
+import { useStateValue, dispatch } from "./StateProvider";
 
 // {/* <Chat/> */}
 
 function App() {
-  const [user, setUser] = useState(null);
+  const [{user}, dispatch] = useStateValue(null);
   return (
     // BEM naming convention 
     <div className="app"> 
